@@ -11,7 +11,7 @@ pipeline {
 
         stage('Run API Tests') {
             steps {
-                bat 'newman run tests\\collections\\users-api-tests.json'
+                bat 'npx newman run tests\\collections\\users-api-tests.json'
             }
         }
 
