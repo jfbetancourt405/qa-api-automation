@@ -5,7 +5,6 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'npm install -g newman'
                 bat 'npm install -g newman-reporter-htmlextra'
             }
         }
